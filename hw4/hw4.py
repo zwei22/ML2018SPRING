@@ -22,7 +22,7 @@ def main():
     pca = PCA(n_components=400, whiten=True, random_state=0)
     pca_result = pca.fit_transform(data)
 
-    kmeans = KMeans(n_clusters=2, random_state=100)
+    kmeans = KMeans(n_clusters=2, random_state=87)
     kmeans_result = kmeans.fit(pca_result).labels_
     print(kmeans_result.sum())
 
