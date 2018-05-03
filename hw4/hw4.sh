@@ -1,1 +1,1 @@
-python3 hw4.py $1 $2 $3
+python3 hw4_new.py $1 $2 $3
