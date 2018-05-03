@@ -8,7 +8,7 @@ def write(filename, output):
             of.write('{0},{1}\n'.format(i, output[i]))
             
 def read(filename):
-    data = np.genfromtxt(filename, delimiter=',', dtype='int16', skip_header=1)[:, 1:]
+    data = np.genfromtxt(filename, delimiter=',', dtype='int32', skip_header=1)[:, 1:]
     return data
     
 def main():
